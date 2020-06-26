@@ -1,0 +1,23 @@
+{
+  "name": "photography",
+  "version": "1.0.0",
+  "description": "Site para fotógrafos divulgarem seus trabalhos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trsouza/photography.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trsouza/photography/issues"
+  },
+  "homepage": "https://github.com/Trsouza/photography#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

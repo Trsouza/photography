@@ -1,63 +1,192 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+    padding: 0rem;
+}
 
 html,
 body {
-    height: 100%;
+    background-color: #F1F1EF;
+    font-family: 'EB Garamond',
+        serif;
 }
 
+/* ----------------- Header ----------------- */
+header .header-color {
+    background-color: #F1F1EF
+}
+
+.color-icons a {
+    color: #313642;
+}
+
+.color-icons a:hover {
+    color: #d49a89;
+}
+
+header h2 {
+    font-family: 'Great Vibes',
+        cursive;
+}
+
+header a {
+    font-family: 'EB Garamond',
+        serif;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.box-div-center {
+    text-align: center;
+}
+
+.box-div-right {
+    text-align: right;
+}
 
 /* ----------------- Home ----------------- */
 
 #home {
-    background: url(../img/capa.jpg) no-repeat;
+    background: url(../img/capa2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 500px;
-    /* padding-top: 180px;
-    padding-bottom: 100px; */
-
+    padding-top: 220px;
+    /* Altura do texto */
+    padding-bottom: 100px;
 }
 
-#home h1,
 #home h3 {
-    line-height: 30px;
-    font-size: 40px;
-    font-family: 'Merriweather',
-    serif;
-}
-
-/* ------------ divider section ------------*/
-.divider {
-    color: #fff;
+    line-height: 110px;
+    font-size: 1rem;
+    font-family: 'EB Garamond',
+        serif;
+    color: #ffffff;
     text-align: center;
-    
 }
 
-.divider h2 {
-    padding-bottom: 4px;
-}
+/* ------------ Divider section ------------*/
 
 .divider .divider-wrapper {
-    padding: 10px 0;
     position: relative;
     bottom: 70px;
     transition: all 0.4s ease-in;
-    border: 2px solid #ff0080;
+    border: 6px solid #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider .container {
+    /* Centraliza as três imgens sobre a capa */
+    width: 50%;
+}
+
+.divider img {
+    width: 170px;
+    height: 200px
 }
 
 
-.divider .divider-wrapper:hover { /* Efeito ao passar o mouse */
-    bottom: 40px;
-    cursor: pointer;
-}
-
-
-/* ----------------- Rodapé ----------------- */
-footer {
+/* ----------------- Sobre ----------------- */
+.jumbotron {
+    background-color: #d49a8944;
+    border-style: dotted;
+    border-color: #d49a8944;
+    border-width: 0.3rem;
+    padding: 1rem;
     text-align: center;
+}
+
+/* ----------------- Footer ----------------- */
+
+
+/* ----------------- Footer ----------------- */
+/* ----------------- Footer ----------------- */
+/* ----------------- Footer ----------------- */
+/* ----------------- Footer ----------------- */
+footer {
+    /* text-align: right; */
     background-color: #313642;
     color: #d49a89;
     padding-bottom: 0.2rem;
     padding-top: .5rem;
+    padding-left: 1rem;
+    font-size: .7rem;
+    font-family: 'Raleway',
+        sans-serif;
+}
 
+.galeria .col-sm-12 .col-md-6 .col-lg-3 {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/**************** BOOTSTRAP BREAK POINTS: ****************/
+
+@media (min-width: 576px) {
+    .divider .divider-wrapper:hover {
+        bottom: 40px;
+        cursor: pointer;
+    }
+}
+
+
+@media (min-width: 768px) {
+    header h2 {
+        font-size: 2rem;
+    }
+
+    .divider .container {
+        /* Centraliza as três imgens sobre a capa */
+        width: 80%;
+    }
+
+    .galeria img {
+        height: 200px;
+        width: 350px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header h2 {
+        font-size: 3rem;
+        margin-top: -1rem;
+    }
+
+    header nav {
+        padding: 0%;
+    }
+
+    header a {
+        font-size: 1.1rem;
+    }
+
+    #home h3 {
+        font-size: 1.5rem;
+    }
+
+    .divider .container {
+        /* Centraliza as três imgens sobre a capa */
+        width: 50%;
+    }
+
+    .sobre p {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        margin-top: 1rem;
+    }
+
+    .sobre .box-p {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
 }
