@@ -15,6 +15,10 @@ body {
         serif;
 }
 
+h4 {
+    color: #713A1D;
+}
+
 /* ----------------- Header ----------------- */
 header .header-color {
     background-color: #F1F1EF
@@ -31,6 +35,7 @@ header .header-color {
 header h2 {
     font-family: 'Great Vibes',
         cursive;
+    color: #713A1D;
 }
 
 header a {
@@ -53,17 +58,17 @@ header a {
 
 /* ----------------- Home ----------------- */
 
-#home {
-    background: url(../img/capa2.jpg) no-repeat;
+.home {
+    background: url(../img/capa2.jpg) center no-repeat;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     min-height: 500px;
     padding-top: 220px;
     /* Altura do texto */
     padding-bottom: 100px;
 }
 
-#home h3 {
+.home h3 {
     line-height: 110px;
     font-size: 1rem;
     font-family: 'EB Garamond',
@@ -97,20 +102,70 @@ header a {
 /* ----------------- Sobre ----------------- */
 .jumbotron {
     background-color: #d49a8944;
-    border-style: dotted;
+    /* border-style: dotted;
     border-color: #d49a8944;
-    border-width: 0.3rem;
+    border-width: 0.3rem; */
     padding: 1rem;
     text-align: center;
 }
 
-/* ----------------- Footer ----------------- */
+/* ----------------- Galeria ----------------- */
+.galeria .col-sm-12 .col-md-6 .col-lg-3 {
+    padding-right: 30px;
+    padding-left: 30px;
+}
 
+.galeria .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/* ----------------- Serviços ----------------- */
+.servicos .box-card {
+    background-color: #d49a8944;
+}
+
+/* ----------------- Contatos ----------------- */
+.contatos {
+    padding: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.411), rgba(248, 250, 248, 0.562)),
+    url(../img/alianca.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
 
 /* ----------------- Footer ----------------- */
-/* ----------------- Footer ----------------- */
-/* ----------------- Footer ----------------- */
-/* ----------------- Footer ----------------- */
+footer .social-icons {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer .social-icons li {
+    display: inline-block;
+    list-style: none;
+    background: #303030;
+    /* margin: 10px 0px 0px 0px; */
+}
+
+footer .social-icons li a {
+    color: #ececec;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    transition: all 0.4s ease-in;
+
+}
+
+footer .social-icons li a:hover {
+    background: #d49a89;
+    color: #fff;
+}
+
 footer {
     /* text-align: right; */
     background-color: #313642;
@@ -123,10 +178,12 @@ footer {
         sans-serif;
 }
 
-.galeria .col-sm-12 .col-md-6 .col-lg-3 {
-    padding-right: 30px;
-    padding-left: 30px;
+footer .row {
+    margin-right: 0px;
+    margin-left: 0px;
 }
+
+
 
 /**************** BOOTSTRAP BREAK POINTS: ****************/
 
@@ -136,8 +193,7 @@ footer {
         cursor: pointer;
     }
 }
-
-
+/* ------------------------------------------------------- */
 @media (min-width: 768px) {
     header h2 {
         font-size: 2rem;
@@ -154,6 +210,7 @@ footer {
     }
 }
 
+/* ------------------------------------------------------- */
 @media (min-width: 1200px) {
     header h2 {
         font-size: 3rem;
@@ -168,7 +225,7 @@ footer {
         font-size: 1.1rem;
     }
 
-    #home h3 {
+    .home h3 {
         font-size: 1.5rem;
     }
 
@@ -188,5 +245,9 @@ footer {
     .sobre .box-p {
         margin-left: 10rem;
         margin-right: 10rem;
+    }
+    footer .social-icons {
+        text-align: right;
+        padding-right: 2rem;
     }
 }
