@@ -15,7 +15,7 @@ body {
         serif;
 }
 
-h4 {
+h5 {
     color: #713A1D;
 }
 
@@ -59,7 +59,7 @@ header a {
 /* ----------------- Home ----------------- */
 
 .home {
-    background: url(../img/capa2.jpg) center no-repeat;
+    background: url(../img/capa.jpg) center no-repeat;
     background-size: cover;
     /* background-position: center; */
     min-height: 500px;
@@ -134,7 +134,6 @@ header a {
     url(../img/alianca.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 500px;
 }
 
 /* ----------------- Footer ----------------- */
@@ -238,8 +237,10 @@ footer .row {
         font-size: 1.2rem;
     }
 
-    h4 {
+    h5 {
         margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
     }
 
     .sobre .box-p {
