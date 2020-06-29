@@ -59,7 +59,8 @@ header a {
 /* ----------------- Home ----------------- */
 
 .home {
-    background: url(../img/capa.jpg) center no-repeat;
+    /* background: url(../img/capa.jpg) center no-repeat; */
+    background: url(https://i.imgur.com/FhWdrwK.jpg) center no-repeat;
     background-size: cover;
     /* background-position: center; */
     min-height: 500px;
@@ -131,7 +132,8 @@ header a {
     margin-top: 4rem;
     margin-bottom: 4rem;
     background: linear-gradient(rgba(255, 255, 255, 0.411), rgba(248, 250, 248, 0.562)),
-    url(../img/alianca.jpg) no-repeat;
+    /* url(../img/alianca.jpg) no-repeat; */
+    url(https://i.imgur.com/mtqkLHt.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
