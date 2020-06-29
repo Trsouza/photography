@@ -137,20 +137,19 @@ header a {
 }
 
 /* ----------------- Footer ----------------- */
-footer .social-icons {
+/* footer .social-icons {
     text-align: center;
     padding: 0px;
     margin: 0px;
-}
+} */
 
-footer .social-icons li {
+/* footer .social-icons li {
     display: inline-block;
     list-style: none;
     background: #303030;
-    /* margin: 10px 0px 0px 0px; */
-}
+} */
 
-footer .social-icons li a {
+/* footer .social-icons li a {
     color: #ececec;
     text-decoration: none;
     font-size: 10px;
@@ -158,12 +157,27 @@ footer .social-icons li a {
     text-align: center;
     transition: all 0.4s ease-in;
 
-}
+} */
 
-footer .social-icons li a:hover {
+
+/* footer .social-icons li a:hover {
     background: #d49a89;
     color: #fff;
+} */
+
+footer .color-icons {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
 }
+footer .color-icons a {
+    color: #d49a89;
+}
+
+footer .color-icons a:hover {
+    color: #f7f7f7;
+}
+
 
 footer {
     /* text-align: right; */
@@ -247,8 +261,13 @@ footer .row {
         margin-left: 10rem;
         margin-right: 10rem;
     }
-    footer .social-icons {
+    /* footer .social-icons {
         text-align: right;
         padding-right: 2rem;
+    } */
+    footer .color-icons {
+         text-align: right;
+         padding-right: 2rem;
     }
+
 }
